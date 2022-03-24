@@ -36,7 +36,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
   background-color: #fff;
   color: #333333;
@@ -50,15 +50,128 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1140px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1060px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* MAIN CONTENT */
+/* SITE HEADER */
 
-.main-content {
+.site-header{
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 85px;
+}
+.logo-link{
+  display: flex;
+  margin-right: 502px;
+}
+.sitenav{
+  display: flex;
+  align-items: flex-start;
+}
+.sitenav-list{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+}
+.sitenav-list-item{
+  list-style: none;
+}
+.sitenav-list-item:not(:last-child){
+  margin-right: 30px;
+}
+.sitenav-list-item-link{
+display: flex;
+text-decoration: none;
+color: #333333;
+}
+.help{
+  text-decoration: none;
+  padding-bottom: 6px;
+  color: #666666;
+  border-bottom: 1px solid #333333;
+}
+/* MAIN */
+.main-section {
   flex-grow: 1;
+
+}
+/*HERO  */
+.hero-section{
+
+}
+.hero-content {
+  background-image: url(../img/intro-bg.png);
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #DDDDDD;
+  margin-bottom: 68px;
+}
+.hero-content-heading {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #000000;
+}
+.hero-content-text {
+  width: 450px;
+  margin: 0;
+  margin-bottom: 42px;
+  padding-left: 40px;
+  border-left: 3px solid #888888;
+}
+.hero-content-link{
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 39px;
+  margin-bottom: 185px;
+  background-color: #EA625C;
+  font-family: "Roboto", "Arial" serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* INFORMATION */
+.information {
+
+}
+.information-list {
+  display: flex;
+}
+.information-list-item {
+  list-style: none;
+  width: 280px;
+}
+.information-list-item:not(:last-child){
+  margin-right: 80px;
+}
+.information-list-item-title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Roboto", "Arial", serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #222222;
+}
+.information-list-item-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 160%;
+  color: #333333;
 }
