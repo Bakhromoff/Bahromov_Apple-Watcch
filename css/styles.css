@@ -57,6 +57,26 @@ img {
   margin-right: auto;
 }
 
+.link{
+  display: inline-block;
+  text-decoration: none;
+  background-color: #EA625C;
+  font-family: "Roboto", "Arial" serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.link:hover{
+  background-color: #C9514C;
+}
+.link:active{
+  opacity: 0.6;
+}
+
 /* SITE HEADER */
 
 .site-header{
@@ -67,10 +87,21 @@ img {
 }
 .logo-link{
   display: flex;
-  margin-right: 502px;
+  margin-right: auto;
+}
+.logo-link:hover{
+  opacity: 0.8;
+}
+.logo-link:active{
+  opacity: 0.6;
+}
+.logo-img{
+  display: flex;
+  width: 35px;
+  height: 41px;
 }
 .sitenav{
-  display: flex;
+  display: block;
   align-items: flex-start;
 }
 .sitenav-list{
@@ -88,13 +119,22 @@ img {
 }
 .sitenav-list-item-link{
 display: flex;
+flex-direction: column;
 text-decoration: none;
 color: #333333;
+padding-bottom: 6px;
+border-bottom: 3px solid #333333 transparent;
 }
-.help{
-  text-decoration: none;
+.sitenav-list-item-link:hover{
+border-bottom: 3px solid #333333;
+}
+.sitenav-list-item-link:active{
+  opacity: 0.7;
+}
+.search-input{
+  padding: 0;
   padding-bottom: 6px;
-  color: #666666;
+  border: 0;
   border-bottom: 1px solid #333333;
 }
 /* MAIN */
@@ -107,8 +147,8 @@ color: #333333;
 
 }
 .hero-content {
-  background-image: url(../img/intro-bg.png);
-  background-position: right center;
+  background-image: url(../img/iwatch.jpg);
+  background-position: calc(50% + 526px) center;
   background-size: contain;
   background-repeat: no-repeat;
   border-bottom: 2px solid #DDDDDD;
@@ -130,22 +170,13 @@ color: #333333;
   border-left: 3px solid #888888;
 }
 .hero-content-link{
-  display: inline-block;
-  text-decoration: none;
   padding: 12px 39px;
   margin-bottom: 185px;
-  background-color: #EA625C;
-  font-family: "Roboto", "Arial" serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 150%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
 }
 
 /* INFORMATION */
 .information {
+  margin-bottom: 140px;
 
 }
 .information-list {
@@ -174,4 +205,124 @@ color: #333333;
   margin-bottom: 20px;
   line-height: 160%;
   color: #333333;
+}
+.information-divider{
+  width: 8px;
+  height: 8px;
+  border: 0;
+  margin: 0;
+  background-color: #ddd;
+  box-shadow: 16px 0 0 0 #ddd,
+  32px 0 0 0 #ddd;
+}
+.information-link{
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #EA625C;
+}
+.information-link::before{
+  width: 40px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: #EA625C;
+  content: "";
+}
+.information-link:hover::before{
+  width: 60px;
+}
+.information-link:active{
+  opacity: 0.8;
+}
+
+/* BAND DEMONSTRATION */
+
+.band-demonstration {
+  margin-bottom: 70px;
+}
+.band-demonstration-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.demonstration-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #000000;
+}
+.demonstration-content-text {
+  width: 450px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  border-left: 3px solid #888888;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #777777;
+}
+.demonstration-link{
+  padding: 12px 90px;
+}
+
+/* FOOOTER */
+
+.footer-section {
+  background-image: url(../img/runners.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.footer-content {
+  display: block;
+  width: 490px;
+  margin-right: 0;
+  margin-left: auto;
+  padding-top: 240px;
+  padding-bottom: 240px;
+}
+.footer-content-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.footer-content-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  border-left: 3px solid #ffffff;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.footer-content-link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 46px;
+  background-color: #EA625C;
+  font-family: "Roboto", "Arial" serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
 }
