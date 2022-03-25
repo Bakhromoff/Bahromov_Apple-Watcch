@@ -88,6 +88,7 @@ img {
 .logo-link{
   display: flex;
   margin-right: auto;
+  transition: opacity 0.4s ease;
 }
 .logo-link:hover{
   opacity: 0.8;
@@ -124,6 +125,7 @@ text-decoration: none;
 color: #333333;
 padding-bottom: 6px;
 border-bottom: 3px solid #333333 transparent;
+transition: border 0.1s ease, opacity 0.4s ease;
 }
 .sitenav-list-item-link:hover{
 border-bottom: 3px solid #333333;
@@ -177,7 +179,6 @@ border-bottom: 3px solid #333333;
 /* INFORMATION */
 .information {
   margin-bottom: 140px;
-
 }
 .information-list {
   display: flex;
@@ -225,6 +226,7 @@ border-bottom: 3px solid #333333;
   text-transform: uppercase;
   text-decoration: none;
   color: #EA625C;
+  transition: width 0.4s ease, opacity 0.4s ease;
 }
 .information-link::before{
   width: 40px;
@@ -313,16 +315,5 @@ border-bottom: 3px solid #333333;
   color: #ffffff;
 }
 .footer-content-link {
-  display: inline-block;
-  text-decoration: none;
   padding: 12px 46px;
-  background-color: #EA625C;
-  font-family: "Roboto", "Arial" serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 150%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-
 }
